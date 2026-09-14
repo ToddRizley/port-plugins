@@ -2,7 +2,7 @@ import React from 'react';
 import { RING_COLORS, QUAD_COLORS } from '../types';
 import type { Blip } from '../types';
 
-const MOVED_LABEL: Record<number, string> = { 2: '✦ New', 1: '▲ Moved in', 0: '', '-1': '▼ Moved out' };
+const MOVED_LABEL: Record<number, string> = { 2: '✦ New', 1: '▲ Moved in', 0: '', [-1]: '▼ Moved out' };
 
 // Blend the category color toward the theme's text color so the label stays
 // readable in both modes: it darkens on a light tooltip, lightens on a dark one.
